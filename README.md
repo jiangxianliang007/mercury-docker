@@ -9,7 +9,7 @@ docker run \
  --name ckb-testnet-mercury \
  -v $PWD/testnet_config.toml:/config/testnet_config.toml \
  -v $PWD/mercury-data:/data/ \
- jiangxianliang/mercury:v0.1.0-rc.2 -c /config/testnet_config.toml run
+ jiangxianliang/mercury:0.1.0-rc.2 -c /config/testnet_config.toml run
 ```
 
 https://github.com/nervosnetwork/mercury
