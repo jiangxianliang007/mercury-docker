@@ -8,7 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends wg
 ENV MERCURY_VERSION 0.1.0-rc.3
 RUN wget https://github.com/nervosnetwork/mercury/releases/download/v${MERCURY_VERSION}/mercury-x86_64-unknown-linux-gnu.tar.gz -O /tmp/mercury-x86_64-unknown-linux-gnu.tar.gz
 RUN cd /tmp && tar zxvf mercury-x86_64-unknown-linux-gnu.tar.gz
-RUN cp /tmp/target/release/mercury /bin/mercury
+RUN cp /tmp/mercury /bin/mercury
 RUN rm -rf /tmp/mercury-x86_64-unknown-linux-gnu.tar.gz
 
 RUN mkdir /data
