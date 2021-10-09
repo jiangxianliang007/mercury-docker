@@ -5,7 +5,7 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends wget apt-utils unzip ca-certificates openssl \
     && rm -rf /var/lib/apt/lists/*
 
-ENV MERCURY_VERSION 0.2.0-beta.1
+ENV MERCURY_VERSION 0.2.0-beta.2
 RUN wget https://github.com/nervosnetwork/mercury/releases/download/v${MERCURY_VERSION}/mercury-x86_64-unknown-linux-gnu.tar.gz -O /tmp/mercury-x86_64-unknown-linux-gnu.tar.gz
 RUN cd /tmp && tar zxvf mercury-x86_64-unknown-linux-gnu.tar.gz
 RUN cp /tmp/mercury /bin/mercury
